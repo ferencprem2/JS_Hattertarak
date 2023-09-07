@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    background-color: rgb(159, 228, 216);
+    width: 400px;
+}

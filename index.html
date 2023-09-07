@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Háttértárak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <label for="capacity">Kapacitás</label>
+        <input type="number" id="capacity" name="capacity">
+        <select name="capacityDropDown" id="capacityDropDown">
+            <option value="Mb">Mb</option>
+            <option value="Gb">Gb</option>
+            <option value="Tb">Tb</option>
+        </select>
+        <br>
+
+        <label for="cloning">Átviteli sebesség</label>
+        <input type="range" name="cloning" value="10" step="1" id="cloning" min="10" max="5000" class="slider" oninput="sliderValue.innerHTML = cloning.value">
+        <label id="sliderValue">10</label>
+        <select name="cloningDropDown" id="cloningDropDown">
+            <option value="Mbps">Mbps</option>
+            <option value="KBps">KBps</option>
+            <option value="MBps">MBps</option>
+            <option value="GBps">GBps</option>
+        </select>
+        <br>
+        <br>
+        <button id="calculateButton">Calculate</button>
+        <p id="results">?</p>
+    </form>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
